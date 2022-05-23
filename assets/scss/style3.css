@@ -1,0 +1,182 @@
+.logoFont {
+    font-family: logoFont;
+}
+
+.primaryFont {
+    font-family: primaryFont;
+}
+
+body {
+    font-family: primaryFont;
+    font-size: 18px;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "logoFont";
+    src: url("assets/fonts/Bauhaus.ttf");
+}
+
+@font-face {
+    font-family: "primaryFont";
+    src: url("assets/fonts/SEGOEUI.ttf");
+}
+
+/* Colors */
+.primaryColor {
+    color: #707070;
+}
+
+.secondaryColor {
+    color: #535151;
+}
+
+/* Background Colors */
+.bgPrimaryColor {
+    background: #707070;
+}
+
+.bg-blue {
+    background: #20577A;
+}
+
+/* ====================================== Start Coding styles ====================================== */
+.navbar .logo .logoText {
+    position: relative;
+    top: 7px;
+}
+
+.navbar .loginBtn {
+    width: 150px;
+    height: 45px;
+}
+
+.navbar ul .link {
+    margin: 0 15px;
+}
+
+.navbar ul .link:hover {
+    border-bottom: 1px solid #20577A;
+}
+
+.homePage img {
+    width: 120%;
+    height: 500px;
+    position: relative;
+    left: 17%;
+}
+
+.homePage .content {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    background: #e6e6e6;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    padding: 60px;
+    color: #707070;
+    margin: 50px auto;
+}
+
+.homePage .content2 {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    background: #e6e6e6;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    padding: 0 60px;
+    color: #707070;
+    margin: 50px auto;
+}
+
+.homePage p:first-child {
+    margin-top: 50px;
+}
+
+.homePage .actionsBtn {
+    margin-top: 40px;
+}
+
+.homePage .actionsBtn .registerBtn {
+    width: auto;
+    min-width: 120px;
+    margin-left: 15px;
+    background: none;
+    border: 1px solid #20577a;
+    color: #707070;
+    margin: 5px;
+}
+
+.homePage .actionsBtn .exploreBtn {
+    width: auto;
+    min-width: 120px;
+    background: #20577a;
+    border: 1px solid #20577a;
+    margin: 5px;
+}
+
+.dropdownMenu {
+    display: none;
+}
+
+.dropdownMenu ul li {
+    text-align: right;
+}
+
+.loginPage img {
+    width: 120%;
+    height: 500px;
+    position: relative;
+    left: 17%;
+}
+
+@media screen and (max-width: 1000px) {
+    .homePage img {
+        width: 100%;
+        left: unset !important;
+    }
+
+    .dropdownMenu {
+        display: inline-block;
+        position: relative;
+        left: 12vw;
+    }
+
+    .dropdownMenu button {
+        background: none;
+        color: #20577A !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .homePage img {
+        width: 100%;
+    }
+
+    .logo {
+        position: relative;
+        left: 10px;
+    }
+}
+
+.customInputStyle,
+.customInputStyle:focus {
+    background: none;
+    border: 0;
+    border-bottom: 3px solid #20577a;
+    bottom: 5px;
+    box-shadow: unset !important;
+    border-radius: 0;
+}
+
+/* Change the white to any color */
+.customInputStyle:-webkit-autofill,
+.customInputStyle:-webkit-autofill:hover,
+.customInputStyle:-webkit-autofill:focus,
+.customInputStyle:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #e6e6e6 inset !important;
+    border: 0;
+    border-bottom: 3px solid #20577a;
+    background: none !important;
+}
