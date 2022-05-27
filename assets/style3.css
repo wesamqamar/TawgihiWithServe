@@ -14,12 +14,12 @@ body {
 /* Fonts */
 @font-face {
     font-family: "logoFont";
-    src: url("assets/fonts/Bauhaus.ttf");
+    src: url("/assets/fonts/Bauhaus.ttf");
 }
 
 @font-face {
     font-family: "primaryFont";
-    src: url("assets/fonts/SEGOEUI.ttf");
+    src: url("/assets/fonts/SEGOEUI.ttf");
 }
 
 /* Colors */

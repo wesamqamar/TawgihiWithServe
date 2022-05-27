@@ -3,14 +3,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="assets/img/graduation-cap.png">
+    <link rel="icon" href="/assets/img/graduation-cap.png">
     <title>Tawjihi</title>
-  <link rel="stylesheet" href="assets/scss/style1.css">
-  <link rel="stylesheet" href="assets/scss/style2.css">
-  <link rel="stylesheet" href="assets/scss/style3.css">
-  <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
-  <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
-  <style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/assets/style1.css">
+  <link rel="stylesheet" href="/assets/style2.css">
+  <link rel="stylesheet" href="/assets/style3.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<style>
     *{font-family:sans-serif;}
   </style>
 </head>
@@ -41,18 +47,18 @@
       text-uppercase
       logoText
       secondaryColor
-    "> tawjihi </h3><img width="50" height="50" src="assets/img/logo.png" alt=""></div>
+    "> tawjihi </h3><img width="50" height="50" src="/assets/img/logo.png" alt=""></div>
             </a></nav>
     </div>
     <div class="homePage">
         <div class="row">
-            <div class="col-md-5"><img src="assets/img/pay.png" alt=""></div>
+            <div class="col-md-5"><img src="/assets/img/pay.png" alt=""></div>
             <div class="col-md-7">
                 <div class="content"><h2 class="px-3 py-2">طريقة الدفع</h2>
                     <div class="row">
                         <div class="col-md-12"><label style="position: relative; top: 10px;">رقم البطاقة</label><input
                                 type="text" class="customInputStyle form-control" id="__BVID__45"><img
-                                src="assets/img/visa.png" alt=""
+                                src="/assets/img/visa.png" alt=""
                                 style="width: 40px; height: 40px; float: left; position: relative; bottom: 50px; left: 10px;">
                         </div>
                         <div class="col-md-6"><label>تاريخ انتهاء الصلاحية</label>
@@ -85,30 +91,97 @@
                                                                                 id="__BVID__51"></div>
                     </div>
                     <div class="actionsBtn">
-                        <button type="button" class="btn exploreBtn btn-secondary rounded-pill" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> ادفع الان</button>
-                        <!----></div>
-                  <!-- Modal -->
-                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          ...
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Understood</button>
-                        </div>
+                        <button type="button" class="btn exploreBtn btn-secondary rounded-pill" data-toggle="modal" data-target="#payModal"> ادفع الان</button>
                       </div>
-                    </div>
-                  </div>
+
+
+                      
+                 
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="modal"
+ id="payModal" size="md" >
+ <div class="modal-content customModal">
+  <div class="text-center">
+    <img width="100px " height="100px"  style="position: relative;top: -50px" src="/assets/img/mp.png" alt="">
+    <h2>مرحبا بك</h2>
+
+    <p>يمكنك البدء بعملية الدفع على الفور</p>
+
+    <div>
+      <p>
+        <img
+          style="position: relative; left: 20px"
+          width="40"
+          height="40"
+          src="/assets/img/g2.png"
+          alt=""
+        />
+        <span
+          style="
+            display: inline-block;
+            position: relative;
+            left: 10px;
+          "
+          >ابدأ بحسابك الشخصي</span
+        >
+      </p>
+
+      <p>
+        <img
+          style="position: relative; left: 55px"
+          width="40"
+          height="40"
+          src="/assets/img/g3.png"
+          alt=""
+        />
+        <span
+          style="
+            display: inline-block;
+            position: relative;
+            left: 43px;
+          "
+          >طرق الدفع</span
+        >
+      </p>
+
+      <p>
+        <img
+          style="position: relative; left: 43px"
+          width="40"
+          height="40"
+          src="/assets/img/g2.png"
+          alt=""
+        />
+        <span
+          style="
+            display: inline-block;
+            position: relative;
+            left: 30px;
+          "
+          >ملفك الشخصي</span
+        >
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
 </body>
 </html>
+
+
+<style>
+
+.customModal {
+  width: 40%;
+    margin: 70px auto;
+}
+.modal-content {
+  border-radius: 5.3rem;
+}
+</style>
